@@ -21,21 +21,23 @@ public class Feed {
 
     @Column(name = "username", nullable = false, unique = true)
     private String username;
+
     @Column(name = "password", nullable = false)
     private String password;
+
     @Column(name = "contents", nullable = false, length = 500)
     private String contents;
 
     public Feed(FeedRequestDto requestDto){
         this.username = getUsername();
         this.password = getPassword();
-        this.contents = getPassword();
+        this.contents = getContents();
     }
 
     public void update(FeedRequestDto requestDto){
         this.username = getUsername();
         this.password = getPassword();
-        this.contents = getPassword();
+        this.contents = getContents();
     }
 
 
