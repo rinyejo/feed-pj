@@ -27,6 +27,7 @@ public class TransactionTest {
     void test1() {
         Feed feed = new Feed();
         feed.setUsername("Rin");
+        feed.setPassword("12345");
         feed.setContents("테스트해보기");
 
         em.persist(feed);  // 영속성 컨텍스트에 메모 Entity 객체를 저장합니다.

@@ -32,11 +32,6 @@ public class FeedController {
         return feedService.getAllFeeds();
     }
 
-//    @GetMapping("/{id}")
-//    public FeedResponseDto findFeed(@PathVariable Long id){
-//        return feedService.findFeed(id);
-//
-//    }
 
     @PutMapping("/{id}")
     public Long updateFeed(@PathVariable Long id, @RequestBody FeedRequestDto requestDto){

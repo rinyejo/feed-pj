@@ -11,3 +11,4 @@ public interface FeedRepository extends JpaRepository<Feed, Long> {
     List<Feed> findAllById();
 
 }
+//
